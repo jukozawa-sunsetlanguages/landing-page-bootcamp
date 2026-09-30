@@ -1,0 +1,5 @@
+# Static landing page — no build step required.
+# Netlify serves the repository root directly.
+[build]
+  publish = "."
+  command = ""
