@@ -2,50 +2,47 @@
 
 ## O que é
 
-Landing page única, estática, de venda/aplicação para o WorkSpeak Bootcamp (treino de
-comunicação profissional em inglês sob pressão, 30 dias). Português do Brasil.
+Landing page estática do método WorkSpeak e da oferta Bootcamp, em português do
+Brasil. A entrada principal é o Communication Readiness Map, sem formulário local.
 
 ## Arquitetura
 
-Sem framework, sem build, sem backend. Três arquivos na raiz:
+Sem framework, build, backend ou dependências novas:
 
-- `index.html` — única página; todas as seções na ordem do briefing (hero → problema →
-  o que resolve → para quem é / não é → método → como funciona → jornada 30 dias →
-  o que está incluso → antes/depois → oferta → FAQ → CTA final → footer).
-- `styles.css` — design system inteiro. Paleta em CSS variables no `:root`.
-- `main.js` — vanilla JS: objeto `CONFIG` (dados editáveis), injeção em `[data-config]`,
-  reveal on scroll via IntersectionObserver, sticky CTA mobile.
+- `index.html`: hero → problema → conhecimento ≠ acesso → método WorkSpeak →
+  Communication Readiness Map → Bootcamp → evidências → para quem é → CTA final.
+- `styles.css`: design system, variáveis da paleta e responsividade.
+- `main.js`: CONFIG, links `[data-config]`, reveal via IntersectionObserver e CTA mobile.
 
-`netlify.toml` publica a raiz (`publish = "."`), sem `command`.
+`netlify.toml` publica a raiz (`publish = "."`), sem comando de build.
 
-## Paleta (proporção alvo ~60/25/10/5)
+## Visual
 
-- Midnight Navy `#0f1e2e` — fundos dominantes, hero, autoridade.
-- Off White `#f4f2ed` — seções de leitura/explicação (problema, para quem, antes/depois, FAQ).
-- Deep Green `#1f3f3a` — método, frameworks, "para quem é", oferta, "incluso".
-- Burnt Orange `#c96f1a` — CTAs, evidências ("30 dias", "Performance Room", checkpoints),
-  destaques. Usar com moderação.
-
-Classes utilitárias: `.section-navy`, `.section-light`, `.section-green`.
-Destaques de evidência: classes `.accent` / `.evidence` / `.evidence-line`.
+Navy `#0f1e2e` dominante (~70%), Off White `#f4f2ed` para leitura (~20%), Green
+`#1f3f3a` para o método (~10%). Amber `#c96f1a` para CTA e marcadores; Gray `#2b2f36`
+para texto. Sora nos títulos, Manrope no corpo. Usar linhas, sequências e grids;
+evitar gradientes, sombras excessivas, animações decorativas e excesso de cards.
 
 ## Convenções
 
-- Sem dependências novas. Sem etapa de build. Não adicionar frameworks.
-- Ícones: SVG inline ou `background-image` SVG data-URI. **Sem emojis** na UI.
-- Animar apenas `transform`/`opacity`. Respeitar `prefers-reduced-motion`.
-- Acessibilidade: headings em ordem lógica, `:focus-visible` nos CTAs, FAQ com
-  `<details>/<summary>` (acessível nativamente), contraste alto.
-- Fontes: Sora (display) + Manrope (corpo).
+- HTML semântico, headings em ordem lógica e foco visível em links.
+- Preservar responsividade, navegação por teclado e prefers-reduced-motion.
+- Conteúdo e CTAs devem funcionar sem JavaScript. Reveal é melhoria progressiva.
+- SVG inline quando necessário, sem emojis ou fotografia de banco.
 
-## Regras de conteúdo (importante)
+## Conteúdo
 
-- **Promessa calibrada**: nunca prometer fluência milagrosa. Usar "treino", "processo",
-  "pressão controlada", "evidência diária", "presença", "comunicação ativa".
-- **Não inventar** data, preço ou nº de vagas — manter em `CONFIG` (main.js) com
-  placeholders visíveis até serem preenchidos.
+- Princípio: Evidence Before Confidence.
+- Ciclo: observação → hipótese → intervenção → prática → evidência → ajuste.
+- Map: triagem por autorrelato; hipótese de trabalho, não diagnóstico de proficiência.
+- Não inventar depoimentos, números, resultados, datas ou validação científica.
+- Oferta definida: 30 dias, predominantemente assíncrono, squad de 2–3, prática de
+  15–25 min/dia, portal, WhatsApp, checkpoint, feedback e Evidence Snapshot.
+- Essential R$497; Calibration R$997, experiência assíncrona + 2 Calibragens.
+- Sem encontros ao vivo recorrentes obrigatórios ou promessa de fluência.
 
 ## Editando dados
 
-Topo de `main.js`, objeto `CONFIG`. Strings vazias mantêm o placeholder do HTML.
-`LINK_CTA`/`FORM_LINK` atualizam o `href` de todos os botões de inscrição.
+`CONFIG.READINESS_MAP_URL` em `main.js` atualiza os links do Map. Sincronizar os
+`href` no HTML para o fallback sem JS. Fatos comerciais definidos ficam no HTML;
+novos fatos precisam de confirmação da fonte. Não criar data futura de turma.

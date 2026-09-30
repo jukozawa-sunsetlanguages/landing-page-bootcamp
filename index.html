@@ -3,368 +3,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WorkSpeak Bootcamp — Treino de comunicação profissional em inglês sob pressão</title>
-  <meta name="description" content="Treino intensivo de 30 dias para profissionais que já estudaram inglês, entendem mais do que conseguem falar e precisam responder com mais clareza, presença e velocidade em situações reais." />
-
-  <meta property="og:title" content="WorkSpeak Bootcamp" />
-  <meta property="og:description" content="Transforme inglês passivo em comunicação profissional ativa — em 30 dias de treino sob pressão controlada." />
+  <title>WorkSpeak — Comunicação profissional em inglês | Bootcamp</title>
+  <meta name="description" content="Seu inglês funciona. Até a pressão aparecer. Conheça o método WorkSpeak, comece pelo Communication Readiness Map e observe sua comunicação profissional." />
+  <meta property="og:title" content="WorkSpeak — Evidence Before Confidence" />
+  <meta property="og:description" content="Do conhecimento ao uso real: observe sua comunicação profissional em inglês. Comece pelo Communication Readiness Map." />
   <meta property="og:type" content="website" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="/styles.css" />
 </head>
-<body>
-  <!-- =========================================================
-       WorkSpeak Bootcamp — Landing page
-       Dados ainda indefinidos vivem em /main.js (objeto CONFIG)
-       e são injetados nos elementos [data-config].
-       ========================================================= -->
-
-  <!-- ============ HEADER ============ -->
-  <header class="site-header" id="top">
+<body id="top">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="WorkSpeak Bootcamp — início">
-        <span class="brand-mark" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l3 3 5-9 4 16 3-7h3"/></svg>
-        </span>
-        <span class="brand-text">WorkSpeak <strong>Bootcamp</strong></span>
+      <a class="brand" href="#top" aria-label="WorkSpeak — início">
+        <span class="brand-mark" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l3 3 5-9 4 16 3-7h3"/></svg></span>
+        <span class="brand-text"><strong>WorkSpeak</strong></span>
       </a>
       <nav class="header-nav" aria-label="Navegação principal">
-        <a href="#metodo">Método</a>
-        <a href="#jornada">Jornada</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn-primary btn-sm" href="#inscricao" data-config="LINK_CTA">Quero aplicar</a>
+        <a href="#metodo">Método</a><a href="#bootcamp">Bootcamp</a><a href="#evidencias">Evidências</a>
+        <a class="btn btn-primary btn-sm" href="https://workspeak-readiness-map.netlify.app" data-config="READINESS_MAP_URL">Fazer o Map</a>
       </nav>
     </div>
   </header>
-
-  <main>
-    <!-- ============ 1. HERO ============ -->
-    <section class="hero">
-      <div class="hero-grid-lines" aria-hidden="true"></div>
+  <main id="conteudo">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
-        <p class="eyebrow reveal">Treino de performance comunicativa · inglês profissional</p>
-        <h1 class="hero-title reveal">
-          Transforme inglês passivo em <span class="accent">comunicação profissional ativa</span> — em 30 dias de treino sob pressão controlada.
-        </h1>
-        <p class="hero-sub reveal">
-          O WorkSpeak Bootcamp é um treino intensivo para profissionais que já estudaram inglês,
-          entendem mais do que conseguem falar e precisam responder com mais clareza, presença e
-          velocidade em situações reais.
-        </p>
+        <p class="eyebrow reveal">Comunicação profissional em inglês</p>
+        <h1 class="hero-title reveal" id="hero-title">Seu inglês funciona.<br /><span class="accent">Até a pressão aparecer.</span></h1>
+        <p class="hero-sub reveal">Você pode conhecer o inglês e ainda ter dificuldade para acessar, organizar e sustentar esse conhecimento ao responder, explicar e pensar na hora.</p>
+        <p class="section-lead reveal">WorkSpeak é um método de treino de comunicação profissional para trabalhar essa distância entre saber e conseguir usar.</p>
         <div class="hero-cta reveal">
-          <a class="btn btn-primary btn-lg" href="#inscricao" data-config="LINK_CTA">Quero aplicar para o Bootcamp</a>
-          <p class="hero-microcopy">30 dias · treino diário de 15 a 25 minutos · encontros ao vivo · prática sob pressão controlada</p>
+          <a class="btn btn-primary btn-lg" href="https://workspeak-readiness-map.netlify.app" data-config="READINESS_MAP_URL">Mapear minha comunicação</a>
+          <p class="hero-microcopy">Comece pelo Communication Readiness Map. Sem compromisso com o Bootcamp.</p>
         </div>
-        <blockquote class="hero-quote reveal">
-          Confiança não vem antes da fala. <span class="accent">Ela nasce da fala.</span>
-        </blockquote>
+        <p class="hero-quote reveal">Evidence Before Confidence<span class="principle-note">Observe o comportamento. Pratique. Reúna evidências. Ajuste.</span></p>
       </div>
     </section>
-
-    <!-- ============ 2. PROBLEMA REAL ============ -->
-    <section class="section section-light" id="problema">
+    <section class="section section-light" id="problema" aria-labelledby="problema-title">
       <div class="container narrow">
-        <p class="section-eyebrow reveal">O problema real</p>
-        <h2 class="section-title reveal">O problema raramente é falta de inglês. É acesso sob pressão.</h2>
+        <p class="section-eyebrow reveal">01 / O problema</p>
+        <h2 class="section-title reveal" id="problema-title">O que acontece quando a conversa exige uma resposta agora?</h2>
         <ul class="problem-list">
-          <li class="reveal">Você até entende inglês.</li>
-          <li class="reveal">Você até sabe a resposta.</li>
-          <li class="reveal">Mas na hora de falar, o corpo trava.</li>
-          <li class="reveal">A frase some.</li>
-          <li class="reveal">A mente tenta traduzir tudo.</li>
-          <li class="reveal">Você responde menos do que poderia.</li>
-          <li class="reveal">Depois da conversa, pensa: <em>“eu sabia dizer isso”.</em></li>
+          <li class="reveal">Você entende mais do que consegue responder.</li>
+          <li class="reveal">Sabe o que dizer, mas só depois da conversa.</li>
+          <li class="reveal">Traduz mentalmente e demora para organizar a resposta.</li>
+          <li class="reveal">Começa a explicar, mas perde clareza ou continuidade sob pressão.</li>
         </ul>
-        <p class="problem-conclusion reveal">
-          O Bootcamp existe para treinar esse momento exato: o espaço entre
-          <strong>saber inglês</strong> e <strong>conseguir usar inglês quando importa</strong>.
-        </p>
+        <p class="problem-conclusion reveal">Essas dificuldades podem envolver acesso, organização, interação, estabilidade ou independência no uso do inglês. Observar o que acontece em reuniões, entrevistas e conversas de trabalho ajuda a definir o que praticar.</p>
       </div>
     </section>
-
-    <!-- ============ 3. O QUE O BOOTCAMP RESOLVE ============ -->
-    <section class="section section-navy" id="resolve">
+    <section class="section section-navy" id="conhecimento-acesso" aria-labelledby="acesso-title">
       <div class="container">
-        <p class="section-eyebrow reveal">O que o Bootcamp resolve</p>
-        <h2 class="section-title reveal">Do inglês que você guarda para o inglês que você usa.</h2>
-        <div class="card-grid card-grid-3">
-          <article class="card reveal"><span class="card-index">01</span><p>Começar a responder antes de se sentir 100% pronto.</p></article>
-          <article class="card reveal"><span class="card-index">02</span><p>Reduzir o tempo de travamento.</p></article>
-          <article class="card reveal"><span class="card-index">03</span><p>Organizar respostas simples com clareza.</p></article>
-          <article class="card reveal"><span class="card-index">04</span><p>Sustentar presença mesmo com erro.</p></article>
-          <article class="card reveal"><span class="card-index">05</span><p>Praticar comunicação profissional real.</p></article>
-          <article class="card reveal"><span class="card-index">06</span><p>Construir evidência diária de progresso.</p></article>
-          <article class="card reveal"><span class="card-index">07</span><p>Parar de depender apenas de aula passiva.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 4 + 5. PARA QUEM É / NÃO É ============ -->
-    <section class="section section-light" id="para-quem">
-      <div class="container">
-        <div class="audience-grid">
-          <div class="audience-col audience-yes reveal">
-            <p class="section-eyebrow">Para quem é</p>
-            <h2 class="audience-title">Este Bootcamp é para você se:</h2>
-            <ul class="check-list">
-              <li>você já estudou inglês, mas ainda trava para falar;</li>
-              <li>você entende mais do que consegue responder;</li>
-              <li>você precisa usar inglês em contexto profissional;</li>
-              <li>você quer treinar consistência, não perfeição;</li>
-              <li>você topa se expor em pequenas doses;</li>
-              <li>você consegue separar 15 a 25 minutos por dia;</li>
-              <li>você quer construir confiança com prática real.</li>
-            </ul>
-          </div>
-          <div class="audience-col audience-no reveal">
-            <p class="section-eyebrow">Para quem não é</p>
-            <h2 class="audience-title">Este Bootcamp não é para você se:</h2>
-            <ul class="x-list">
-              <li>você quer apenas assistir aulas;</li>
-              <li>você quer promessa de fluência milagrosa;</li>
-              <li>você não pretende praticar diariamente;</li>
-              <li>você procura um curso tradicional de gramática;</li>
-              <li>você é iniciante absoluto e ainda não consegue formular frases básicas;</li>
-              <li>você quer se sentir pronto antes de começar.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 6. O MÉTODO ============ -->
-    <section class="section section-green" id="metodo">
-      <div class="container">
-        <p class="section-eyebrow reveal">O método</p>
-        <h2 class="section-title reveal">Treino de comunicação sob pressão controlada.</h2>
-        <p class="section-lead reveal">Quatro pilares que trabalham juntos — exposição, estrutura, sistema nervoso e identidade.</p>
-        <div class="pillars">
-          <article class="pillar reveal">
-            <span class="pillar-num">01</span>
-            <h3>Pressure Exposure</h3>
-            <p>Exposição gradual à fala antes da sensação de prontidão.</p>
-          </article>
-          <article class="pillar reveal">
-            <span class="pillar-num">02</span>
-            <h3>Communication Structure</h3>
-            <p>Estruturas simples para organizar respostas com clareza.</p>
-          </article>
-          <article class="pillar reveal">
-            <span class="pillar-num">03</span>
-            <h3>Nervous System Training</h3>
-            <p>Treino para continuar falando mesmo com desconforto, pausa ou erro.</p>
-          </article>
-          <article class="pillar reveal">
-            <span class="pillar-num">04</span>
-            <h3>Identity Reset</h3>
-            <p>De “pessoa que trava em inglês” para “pessoa que pratica comunicação real”.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 7. COMO FUNCIONA NA PRÁTICA ============ -->
-    <section class="section section-navy" id="como-funciona">
-      <div class="container">
-        <p class="section-eyebrow reveal">Como funciona na prática</p>
-        <h2 class="section-title reveal">Um processo ativo — não um curso gravado para assistir.</h2>
-        <div class="card-grid card-grid-4">
-          <article class="card card-flat reveal"><h3>30 dias de treino</h3><p>Um bloco contínuo, com começo, meio e fim.</p></article>
-          <article class="card card-flat reveal"><h3>Treinos diários</h3><p>De 15 a 25 minutos, todos os dias.</p></article>
-          <article class="card card-flat reveal"><h3>Grupo de accountability</h3><p>Acompanhamento para manter a consistência.</p></article>
-          <article class="card card-flat reveal"><h3 class="evidence">Performance Room semanal</h3><p>Encontro ao vivo de prática sob pressão.</p></article>
-          <article class="card card-flat reveal"><h3 class="evidence">Checkpoints</h3><p>Marcos de evolução ao longo das semanas.</p></article>
-          <article class="card card-flat reveal"><h3>Envio de prática</h3><p>Você produz fala e registra evidência.</p></article>
-          <article class="card card-flat reveal"><h3>Feedback e direcionamento</h3><p>Orientação para ajustar o que importa.</p></article>
-          <article class="card card-flat reveal"><h3>Foco no que conta</h3><p>Resposta, presença e clareza.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 8. JORNADA DOS 30 DIAS ============ -->
-    <section class="section section-navy section-timeline" id="jornada">
-      <div class="container">
-        <p class="section-eyebrow reveal">A jornada dos 30 dias</p>
-        <h2 class="section-title reveal">Quatro semanas, uma progressão clara.</h2>
-        <ol class="timeline">
-          <li class="timeline-item reveal">
-            <span class="timeline-week">Semana 1</span>
-            <h3>Start Before You Feel Ready</h3>
-            <p>Começar a falar antes da confiança aparecer.</p>
-          </li>
-          <li class="timeline-item reveal">
-            <span class="timeline-week">Semana 2</span>
-            <h3>Sustain Under Pressure</h3>
-            <p>Sustentar respostas usando estrutura simples: ideia → motivo → exemplo.</p>
-          </li>
-          <li class="timeline-item reveal">
-            <span class="timeline-week">Semana 3</span>
-            <h3>Structure &amp; Clarity</h3>
-            <p>Organizar ideias com mais clareza em situações profissionais.</p>
-          </li>
-          <li class="timeline-item reveal">
-            <span class="timeline-week">Semana 4</span>
-            <h3>Real Interaction</h3>
-            <p>Responder, perguntar, continuar e sustentar presença em interação real.</p>
-          </li>
+        <p class="section-eyebrow reveal">02 / Conhecimento ≠ acesso</p>
+        <h2 class="section-title reveal" id="acesso-title">Saber inglês e usá-lo em tempo real são tarefas diferentes.</h2>
+        <ol class="sequence reveal" aria-label="Do conhecimento à performance">
+          <li><h3>Conhecimento</h3><p>O repertório de inglês que você já tem.</p></li>
+          <li><h3>Acesso</h3><p>Encontrar e organizar esse repertório enquanto a interação acontece.</p></li>
+          <li><h3>Performance</h3><p>Usá-lo para responder, explicar e sustentar a comunicação no contexto profissional.</p></li>
         </ol>
+        <p class="section-lead reveal">WorkSpeak trabalha a distância entre o que você conhece e o que consegue sustentar em uso real. A prática precisa chegar às situações em que o inglês importa para o seu trabalho.</p>
       </div>
     </section>
-
-    <!-- ============ 9. O QUE ESTÁ INCLUSO ============ -->
-    <section class="section section-green" id="incluso">
+    <section class="section section-green" id="metodo" aria-labelledby="metodo-title">
       <div class="container">
-        <p class="section-eyebrow reveal">O que está incluso</p>
-        <h2 class="section-title reveal">Tudo que sustenta a execução diária.</h2>
-        <div class="card-grid card-grid-3">
-          <article class="card card-included reveal"><p>Treino diário guiado</p></article>
-          <article class="card card-included reveal"><p class="evidence-line">Performance Room semanal</p></article>
-          <article class="card card-included reveal"><p>Grupo de acompanhamento</p></article>
-          <article class="card card-included reveal"><p>Prompts de fala</p></article>
-          <article class="card card-included reveal"><p class="evidence-line">Checkpoints semanais</p></article>
-          <article class="card card-included reveal"><p>Framework de resposta</p></article>
-          <article class="card card-included reveal"><p>Prática com pressão controlada</p></article>
-          <article class="card card-included reveal"><p>Orientação para evolução</p></article>
-          <article class="card card-included reveal"><p>Evidências de progresso</p></article>
-        </div>
+        <p class="section-eyebrow reveal">03 / O método WorkSpeak</p>
+        <h2 class="section-title reveal" id="metodo-title">Evidence Before Confidence</h2>
+        <p class="section-lead reveal">Você não precisa esperar sentir confiança para praticar. O ponto de partida é observar seu comportamento atual, formular uma hipótese de trabalho e escolher uma intervenção. A prática produz evidências para orientar o próximo ajuste.</p>
+        <ol class="method-cycle reveal" aria-label="Ciclo do método WorkSpeak">
+          <li><span>01</span><h3>Observação</h3><p>O que acontece quando você precisa se comunicar?</p></li>
+          <li><span>02</span><h3>Hipótese</h3><p>Qual padrão pode estar afetando seu uso do inglês?</p></li>
+          <li><span>03</span><h3>Intervenção</h3><p>Qual comportamento merece uma prática direcionada?</p></li>
+          <li><span>04</span><h3>Prática</h3><p>Repita esse comportamento em contexto profissional.</p></li>
+          <li><span>05</span><h3>Evidência</h3><p>Registre o que conseguiu sustentar e onde houve dificuldade.</p></li>
+          <li><span>06</span><h3>Ajuste</h3><p>Use o que observou para revisar a hipótese e a prática.</p></li>
+        </ol>
+        <p class="section-lead reveal">Clareza e estabilidade são comportamentos a observar na performance. A sensação de confiança pode acompanhar o processo; as decisões de treino partem das evidências.</p>
       </div>
     </section>
-
-    <!-- ============ 10. ANTES E DEPOIS ============ -->
-    <section class="section section-light" id="antes-depois">
-      <div class="container">
-        <p class="section-eyebrow reveal">Antes e depois</p>
-        <h2 class="section-title reveal">Sem milagre. Com processo.</h2>
-        <div class="ba-grid">
-          <div class="ba-col ba-before reveal">
-            <h3>Antes</h3>
-            <ul>
-              <li>demora para começar;</li>
-              <li>medo de errar;</li>
-              <li>respostas curtas demais;</li>
-              <li>excesso de tradução mental;</li>
-              <li>sensação de “eu sei, mas não consigo falar”.</li>
-            </ul>
-          </div>
-          <div class="ba-arrow" aria-hidden="true">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </div>
-          <div class="ba-col ba-after reveal">
-            <h3>Depois <span class="ba-note">— se executar o processo</span></h3>
-            <ul>
-              <li>começa mais rápido;</li>
-              <li>responde com mais estrutura;</li>
-              <li>lida melhor com pausas;</li>
-              <li>sustenta presença;</li>
-              <li>constrói evidências reais de comunicação;</li>
-              <li>sente mais clareza para usar o inglês profissionalmente.</li>
-            </ul>
-          </div>
+    <section class="section section-navy" id="map" aria-labelledby="map-title">
+      <div class="container split-layout">
+        <div class="reveal">
+          <p class="section-eyebrow">04 / O primeiro passo</p>
+          <h2 class="section-title" id="map-title">Communication Readiness Map</h2>
+          <p class="section-lead">Uma ferramenta estruturada de triagem por autorrelato para começar a observar sua comunicação.</p>
+          <div class="hero-cta"><a class="btn btn-primary" href="https://workspeak-readiness-map.netlify.app" data-config="READINESS_MAP_URL">Fazer o Communication Readiness Map</a></div>
         </div>
-      </div>
-    </section>
-
-    <!-- ============ 11. OFERTA / INSCRIÇÃO ============ -->
-    <section class="section section-navy section-offer" id="inscricao">
-      <div class="container narrow">
-        <p class="section-eyebrow reveal">A turma</p>
-        <h2 class="section-title reveal">WorkSpeak Bootcamp</h2>
-        <div class="offer-card reveal">
-          <ul class="offer-specs">
-            <li><span>Formato</span><strong>Online · treino diário</strong></li>
-            <li><span>Duração</span><strong class="evidence">30 dias</strong></li>
-            <li><span>Encontros</span><strong class="evidence">Performance Room ao vivo (semanal)</strong></li>
-            <li><span>Próxima turma</span><strong data-config="DATA_INICIO">[DATA DE INÍCIO]</strong></li>
-            <li><span>Investimento</span><strong data-config="VALOR">[VALOR]</strong></li>
-            <li><span>Vagas</span><strong class="evidence" data-config="NUMERO_VAGAS">[VAGAS LIMITADAS]</strong></li>
+        <div class="reveal">
+          <ul class="plain-list">
+            <li>Identifique onde o inglês importa profissionalmente.</li>
+            <li>Descreva como você percebe sua comunicação hoje.</li>
+            <li>Explore possíveis padrões que afetam seu uso do inglês.</li>
+            <li>Escolha uma prioridade para observar em situações reais.</li>
           </ul>
-          <a class="btn btn-primary btn-lg btn-block" href="#" data-config="LINK_CTA">Quero aplicar para o Bootcamp</a>
-          <p class="offer-note">As vagas são limitadas porque o treino exige participação ativa e acompanhamento.</p>
+          <p class="boundary-note">O Map produz uma hipótese de trabalho, não um diagnóstico objetivo de proficiência. Essa hipótese precisa ser confrontada com a performance real.</p>
+        </div>
+        <p class="flow-line reveal">Autorrelato <span aria-hidden="true">→</span> Hipótese de trabalho <span aria-hidden="true">→</span> Performance real <span aria-hidden="true">→</span> Evidência</p>
+      </div>
+    </section>
+    <section class="section section-navy section-offer" id="bootcamp" aria-labelledby="bootcamp-title">
+      <div class="container">
+        <p class="section-eyebrow reveal">05 / A experiência de treino</p>
+        <h2 class="section-title reveal" id="bootcamp-title">WorkSpeak Bootcamp</h2>
+        <p class="section-lead reveal">30 dias para praticar comportamentos específicos de comunicação e reunir evidências da sua performance. O objetivo é sustentar a prática e observar o uso do inglês, além de concluir atividades.</p>
+        <dl class="bootcamp-facts reveal">
+          <div><dt>Duração</dt><dd>30 dias</dd></div><div><dt>Squad</dt><dd>2–3 participantes</dd></div><div><dt>Prática diária</dt><dd>15–25 minutos</dd></div><div><dt>Formato</dt><dd>Predominantemente assíncrono</dd></div>
+        </dl>
+        <p class="section-lead reveal">A experiência inclui portal, WhatsApp, checkpoint, feedback e Evidence Snapshot. Não há encontros ao vivo recorrentes obrigatórios.</p>
+        <div class="pricing-grid reveal" aria-label="Opções da oferta founder">
+          <article class="price-option"><p class="section-eyebrow">Oferta founder</p><h3>Essential</h3><p class="price">R$497</p><p>Experiência assíncrona central: 30 dias de prática em squad, com portal, WhatsApp, checkpoint, feedback e Evidence Snapshot.</p></article>
+          <article class="price-option"><p class="section-eyebrow">Oferta founder</p><h3>Calibration</h3><p class="price">R$997</p><p>A mesma experiência assíncrona do Essential <strong class="accent">+ 2 Calibragens</strong> (sessões Calibration).</p></article>
+        </div>
+        <p class="offer-note reveal">Comece pelo Map para formular uma hipótese sobre sua comunicação antes de escolher uma intervenção.</p>
+      </div>
+    </section>
+    <section class="section section-navy" id="evidencias" aria-labelledby="evidencias-title">
+      <div class="container">
+        <p class="section-eyebrow reveal">06 / Evidências</p>
+        <h2 class="section-title reveal" id="evidencias-title">O que conta como evidência?</h2>
+        <p class="section-lead reveal">Evidence Before Confidence significa olhar para registros de uso e comportamentos observáveis. Eles ajudam a descrever o que aconteceu, o que ainda exige atenção e o que precisa ser testado novamente.</p>
+        <ol class="evidence-records reveal">
+          <li><h3>Ponto de partida</h3><p>Uma baseline registra como você se comunica antes da prática direcionada.</p></li>
+          <li><h3>Registros de prática</h3><p>Respostas e gravações permitem observar organização, clareza, interação e continuidade.</p></li>
+          <li><h3>Checkpoint e reflexão</h3><p>Feedback e reflexão do participante ajudam a comparar tentativas e orientar ajustes.</p></li>
+          <li><h3>Evidence Snapshot</h3><p>Uma síntese das evidências reunidas para revisar a performance e as prioridades de prática.</p></li>
+        </ol>
+        <p class="boundary-note reveal">Esses são registros do processo de treino. Não representam uma promessa de resultado ou de fluência em 30 dias.</p>
+      </div>
+    </section>
+    <section class="section section-light" id="para-quem" aria-labelledby="publico-title">
+      <div class="container">
+        <p class="section-eyebrow reveal">07 / Para quem é</p>
+        <h2 class="section-title reveal" id="publico-title">Um treino que pede participação ativa.</h2>
+        <div class="audience-grid">
+          <div class="audience-col reveal"><h3>Faz sentido para profissionais que:</h3><ul class="plain-list"><li>já têm inglês suficiente para tentar se comunicar;</li><li>precisam do idioma em situações profissionais reais;</li><li>entendem mais do que conseguem produzir de forma consistente;</li><li>estão dispostos a repetir a prática;</li><li>podem dedicar cerca de 15–25 minutos nos dias de prática;</li><li>aceitam gravação, prática, reflexão e feedback quando necessários.</li></ul></div>
+          <div class="audience-col reveal"><h3>Se sua prioridade é outra:</h3><p class="section-lead">O Bootcamp não é um curso de inglês para iniciantes ou um curso tradicional de gramática. A experiência exige prática; não se resume a assistir vídeos e não oferece promessa de fluência.</p><p class="section-lead">Se você busca apenas conteúdo para consumir ou não pode praticar neste momento, esse formato pode não atender à sua necessidade atual.</p></div>
         </div>
       </div>
     </section>
-
-    <!-- ============ 12. FAQ ============ -->
-    <section class="section section-light" id="faq">
+    <section class="section section-final" id="proximo-passo" aria-labelledby="final-title">
       <div class="container narrow">
-        <p class="section-eyebrow reveal">Perguntas frequentes</p>
-        <h2 class="section-title reveal">O que costumam perguntar antes de aplicar.</h2>
-        <div class="faq reveal">
-          <details class="faq-item">
-            <summary>Preciso ser fluente para participar?</summary>
-            <div class="faq-answer"><p>Não. O Bootcamp não é para iniciantes absolutos, mas também não exige fluência. Ele é para quem já estudou inglês e entende mais do que consegue falar.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary>Sou intermediário, mas travo muito. Serve para mim?</summary>
-            <div class="faq-answer"><p>Sim. Esse é exatamente o perfil. O treino trabalha o acesso sob pressão — o espaço entre saber inglês e conseguir usá-lo na hora.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary>Quanto tempo preciso treinar por dia?</summary>
-            <div class="faq-answer"><p>De 15 a 25 minutos por dia, ao longo de 30 dias. A consistência importa mais do que a duração.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary>O Bootcamp é aula de inglês tradicional?</summary>
-            <div class="faq-answer"><p>Não. Não é gramática extensa nem teoria. É treino de comunicação: você fala, estrutura respostas e constrói presença.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary>Vou sair fluente em 30 dias?</summary>
-            <div class="faq-answer"><p>Não prometemos fluência milagrosa. Se você executar o processo, reduz a trava, responde com mais clareza, sustenta melhor a presença e constrói evidências diárias de comunicação profissional sob pressão.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary>Como funcionam os encontros ao vivo?</summary>
-            <div class="faq-answer"><p>São as Performance Rooms semanais: encontros de prática sob pressão controlada, com foco em resposta, presença e clareza.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary>E se eu tiver vergonha de falar?</summary>
-            <div class="faq-answer"><p>O desconforto faz parte e é tratado em doses controladas. A exposição é gradual — você começa antes de se sentir pronto, com apoio do grupo e do método.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary>O que acontece se eu perder um dia de treino?</summary>
-            <div class="faq-answer"><p>Você retoma no dia seguinte. O objetivo é consistência ao longo de 30 dias, não perfeição. Perder um dia não quebra o processo — abandonar o treino, sim.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary>Para quais situações profissionais esse treino ajuda?</summary>
-            <div class="faq-answer"><p>Reuniões, entrevistas, calls, apresentações e conversas em que você precisa responder, sustentar presença e se posicionar em inglês.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary>Como faço para entrar?</summary>
-            <div class="faq-answer"><p>Você aplica para a turma pelo botão de inscrição. As vagas são limitadas e o treino exige participação ativa. <a href="#" data-config="LINK_CTA">Aplicar agora</a>.</p></div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 13. CTA FINAL ============ -->
-    <section class="section section-final">
-      <div class="container narrow center">
-        <h2 class="final-title reveal">
-          Você não precisa esperar confiança para começar a falar.<br />
-          <span class="accent">Você precisa começar a falar para construir confiança.</span>
-        </h2>
-        <a class="btn btn-primary btn-lg reveal" href="#" data-config="LINK_CTA">Quero participar do WorkSpeak Bootcamp</a>
-        <p class="final-microcopy reveal">30 dias de treino para transformar inglês passivo em comunicação profissional ativa.</p>
+        <p class="section-eyebrow reveal">08 / O próximo passo</p>
+        <h2 class="final-title reveal" id="final-title">Antes de escolher uma intervenção, observe seu padrão atual.</h2>
+        <p class="section-lead reveal">O Communication Readiness Map é a porta de entrada para formular uma hipótese e escolher o que observar no seu uso real do inglês.</p>
+        <div class="hero-cta reveal"><a class="btn btn-primary btn-lg" href="https://workspeak-readiness-map.netlify.app" data-config="READINESS_MAP_URL">Mapear minha comunicação</a></div>
+        <p class="final-microcopy reveal">O primeiro passo não exige compromisso com o Bootcamp.</p>
       </div>
     </section>
   </main>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span class="brand-text">WorkSpeak <strong>Bootcamp</strong></span>
-      <p class="footer-tag">Treino de performance comunicativa profissional em inglês sob pressão.</p>
-      <a class="footer-contact" href="#" data-config="WHATSAPP_LINK">Falar com a equipe</a>
-    </div>
-  </footer>
-
-  <!-- ============ STICKY CTA (mobile) ============ -->
-  <div class="sticky-cta" aria-hidden="false">
-    <a class="btn btn-primary btn-block" href="#" data-config="LINK_CTA">Quero aplicar para o Bootcamp</a>
-  </div>
-
+  <footer class="site-footer"><div class="container footer-inner"><span class="brand-text"><strong>WorkSpeak</strong></span><p class="footer-tag">Comunicação profissional em inglês. Evidence Before Confidence.</p><a href="#top">Voltar ao início</a></div></footer>
+  <div class="sticky-cta" hidden><a class="btn btn-primary btn-block" href="https://workspeak-readiness-map.netlify.app" data-config="READINESS_MAP_URL">Mapear minha comunicação</a></div>
   <script src="/main.js"></script>
 </body>
 </html>
